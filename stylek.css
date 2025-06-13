@@ -1,0 +1,51 @@
+/* Overall Game Style */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+h1, p {
+    color: #333;
+}
+
+/* Game Board Grid */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: max-content;
+}
+
+/* Box Style */
+.box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+/* Interactive Animation */
+.box:active {
+    transform: scale(1.1);
+}
+
+/* Color Variations */
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.orange { background-color: orange; }
+.purple { background-color: purple; }
+
+/* Hidden Effect */
+.hidden {
+    opacity: 0;
+}
